@@ -1,3 +1,11 @@
+                            //**BubbleSort idea**//
+
+// * Compare adjacent elements in the array and swap the positions if they are not in the intended
+//   order
+// * Repeat the instruction as you step through each element in the array
+// *  Once you step through the whole array with no swaps, the array is sorted
+
+
 function bubbleSort(arr) {
     let swapped;
     do {
