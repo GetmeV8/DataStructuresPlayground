@@ -16,5 +16,7 @@ function Search(array, target, leftIndex, rightIndex) {
         return Search(array, target, rightIndex, middleindex + 1)
     }
 }
+
+
 let aar = [-5, 2, 4, 6, 1];
 console.log(RecursiveBinarySearch(aar, 2));

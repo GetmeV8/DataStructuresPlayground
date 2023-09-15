@@ -9,3 +9,5 @@ function LinearSearch(array, target) {
 
 let arr = [4, 8, 22, 2, 0, 9, -1];
 console.log(LinearSearch(arr, 0));
+
+
