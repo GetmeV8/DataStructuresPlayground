@@ -6,7 +6,7 @@
 //   array remaining. That will be the sorted array.
 
 function mergeSort(array){
-
+          let right;
 
 
     
