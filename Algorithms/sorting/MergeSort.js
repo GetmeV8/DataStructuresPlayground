@@ -4,3 +4,10 @@
 //   considered sorted)
 // * Repeatedly merge the sub arrays to produce new sorted sub arrays until there is only one sub
 //   array remaining. That will be the sorted array.
+
+function mergeSort(array){
+
+
+
+    
+}
