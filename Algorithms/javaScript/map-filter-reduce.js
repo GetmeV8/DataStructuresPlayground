@@ -25,3 +25,12 @@ console.log(output)
 const filterOutput = array.filter((x) => x > 4);
 console.log(filterOutput);
 
+//**Reduce**//
+
+//to find sum or max
+
+const reduceOutput = array.reduce(function(acc,curr){
+    acc = acc+curr
+    return acc;
+},0)
+
