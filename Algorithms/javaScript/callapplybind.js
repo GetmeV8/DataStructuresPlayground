@@ -22,4 +22,4 @@ let name2 = {
  //bind method
  let prinMyName = printFullName.bind(name2,"Mumbai","Maharashtra");
  console.log(prinMyName);
- prinMyName();
+ prinMyName();  
