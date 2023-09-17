@@ -16,11 +16,12 @@ console.log(output)
 
 //**Filter**//
 
-function isOdd(x) {
-    return x % 2;
-    //return x%2===0;
-    //return x>4;
-}
-const filterOutput= array.filter(isOdd);
+// function isOdd(x) {
+//     return x % 2;
+//     //return x%2===0;
+//     //return x>4;
+// }
+// const filterOutput= array.filter(isOdd);
+const filterOutput = array.filter((x) => x > 4);
 console.log(filterOutput);
 
