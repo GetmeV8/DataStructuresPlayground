@@ -33,12 +33,15 @@ class Queue {
     isEmpty() {
         return this.items.length === 0;
     }
-    peek(){
-        if(!this.isEmpty()){
+    peek() {
+        if (!this.isEmpty()) {
             return this.items[0];
-        }else{
+        } else {
             return null;
         }
+    }
+    size() {
+        return this.items.length;
     }
 
 }
