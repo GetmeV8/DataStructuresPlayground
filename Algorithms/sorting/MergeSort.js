@@ -6,8 +6,6 @@
 //   array remaining. That will be the sorted array.
 
 
-
-
 function mergeSort(arr) {
     if (arr.length <= 1) {
         return arr; // Base case: an array with 0 or 1 elements is already sorted
