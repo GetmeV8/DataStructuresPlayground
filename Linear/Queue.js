@@ -1,4 +1,4 @@
-                                // Queue //
+// Queue //
 
 
 // The queue data structure is a sequential collection of elements that follows
@@ -20,9 +20,27 @@
 // Enqueue, which adds an element to the rear/tail of the collection
 
 
-class Queue{
-    constructor(){
-        this.items=[]
+class Queue {
+    constructor() {
+        this.items = [];
     }
+    enqueue(elements) {
+        this.items.push(elements);
+    }
+    dequeue() {
+        return this.items.shift(elements);
+    }
+    isEmpty() {
+        return this.items.length === 0;
+    }
+    peek(){
+        if(!this.isEmpty()){
+            return this.items[0];
+        }else{
+            return null;
+        }
+    }
+
 }
+
 
