@@ -1,43 +1,25 @@
-// **Merge sort idea**//
-
-// * Divide the array into sub arrays, each containing only one element (An array with one element is
-//   considered sorted)
-// * Repeatedly merge the sub arrays to produce new sorted sub arrays until there is only one sub
-//   array remaining. That will be the sorted array.
-
-
-function mergeSort(arr) {
-    if (arr.length <= 1) {
-        return arr; // Base case: an array with 0 or 1 elements is already sorted
+function mergeSort(array) {
+    if (array.length < 2) {
+        return array;
     }
-
-    const mid = Math.floor(arr.length / 2);
-    const left = arr.slice(0, mid);
-    const right = arr.slice(mid);
-
-    return merge(mergeSort(left), mergeSort(right));
+    const mid = Math.floor(array.length / 2);
+    const leftArr = array.slice(0, mid);
+    const rightArr = array.slice(mid);
+    return merge(mergeSort(leftArr), mergeSort(rightArr));
 }
 
-function merge(left, right) {
-    let result = [];
-    let i = 0;
-    let j = 0;
 
-    while (i < left.length && j < right.length) {
-        if (left[i] < right[j]) {
-            result.push(left[i]);
-            i++;
+function merge(leftArr, rightArr) {
+    const sortedArray = [];
+    while (leftArr.length && rightArr.length) {
+        if (leftArr[0] <= rightArr[0]) {
+            sortedArray.push(leftArr.shift());
         } else {
-            result.push(right[j]);
-            j++;
+            sortedArray.push(rightArr.shift());
         }
     }
-
-    return result.concat(left.slice(i)).concat(right.slice(j));
+    return [...sortedArray, ...leftArr, ...rightArr];
 }
 
-// Example Usage:
-const unsortedArray = [5, 3, 1, 8, 6, 2, 7, 4];
-const sortedArray = mergeSort(unsortedArray);
-
-console.log("Sorted Array:", sortedArray);
+const arr = [8, 20, -2, 4, -6];
+console.log(mergeSort(arr));

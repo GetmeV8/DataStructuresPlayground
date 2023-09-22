@@ -1,4 +1,4 @@
-                            //**BubbleSort idea**//
+//**BubbleSort idea**//
 
 // * Compare adjacent elements in the array and swap the positions if they are not in the intended
 //   order

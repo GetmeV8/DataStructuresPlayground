@@ -2,7 +2,7 @@
 
 // *  Identify the pivot element in the array
 // * Pick first element as pivot
-// * O Pick last element as pivot (Our approach)
+// * Pick last element as pivot (Our approach)
 // * Pick a random element as pivot
 // * Pick median as pivot
 // * Put everything that's smaller than the pivot into a 'left' array and everything that's greater than
@@ -16,7 +16,7 @@ function quickSort(arr) {
     if (arr.length < 2) {
         return arr
     }
-    let pivot = arr[arr.length-1]
+    let pivot = arr[arr.length - 1]
     let left = []
     let right = []
     for (let i = 0; i < arr.length - 1; i++) {
@@ -28,7 +28,5 @@ function quickSort(arr) {
     }
     return [...quickSort(left), pivot, ...quickSort(right)];
 }
-
-
 let arry = [8, 20, -2, 4, -6];
 console.log(quickSort(arry));
