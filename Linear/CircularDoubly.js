@@ -5,12 +5,10 @@ class Node {
         this.prev = null;
     }
 }
-
 class CircularDoublyLinkedList {
     constructor() {
         this.head = null;
     }
-
     append(data) {
         const newNode = new Node(data);
 
@@ -79,3 +77,4 @@ myList.displayForward();
 // Display the linked list in reverse order
 console.log("\nReverse Order:");
 myList.displayReverse();
+myList.displayForward()
