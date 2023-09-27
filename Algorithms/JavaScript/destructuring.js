@@ -2,12 +2,12 @@
 const numbers = [1, 2, 3, 4, 5];
 
 // Destructuring
-const [first, second, , fourth] = numbers;
+const [first, second, third, fourth,] = numbers;
 
 console.log(first);  // Output: 1
 console.log(second); // Output: 2
 console.log(fourth); // Output: 4
-
+console.log(third); // Output:3
 
 // Example object
 const person = {
@@ -19,7 +19,6 @@ const person = {
 
 // Destructuring
 const { firstName, lastName, age } = person
-
 
 console.log(firstName); // Output: John
 console.log(lastName);  // Output: Doe
