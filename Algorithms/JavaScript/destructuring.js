@@ -15,12 +15,12 @@ const person = {
     lastName: 'Doe',
     age: 30,
     city: 'New York'
-  };
-  
-  // Destructuring
-  const { firstName, lastName, age } = person;
-  
-  console.log(firstName); // Output: John
-  console.log(lastName);  // Output: Doe
-  console.log(age);        // Output: 30
-  
+};
+
+// Destructuring
+const { firstName, lastName, age } = person
+
+
+console.log(firstName); // Output: John
+console.log(lastName);  // Output: Doe
+console.log(age);        // Output: 30
