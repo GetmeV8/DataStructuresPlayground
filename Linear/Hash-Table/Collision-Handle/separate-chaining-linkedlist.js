@@ -19,7 +19,7 @@ class Node {
       }
       return hashValue % this.size;
     }
-  
+
     insert(key, value) {
       const index = this.hash(key);
       const newNode = new Node(key, value);
@@ -34,6 +34,7 @@ class Node {
         current.next = newNode;
       }
     }
+  
   
     search(key) {
       const index = this.hash(key);
